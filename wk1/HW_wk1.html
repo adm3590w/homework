@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- Webpage Title -->
+    <title>반려동물's 비밀창고</title>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <!-- 구글폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        * {
+            font-family: 'East Sea Dokdo', cursive;
+        }
+
+        .wrap {
+            width: 500px;
+            margin: auto;
+        }
+
+        .img {
+            background-image: url('https://www.meijer.com/content/dam/meijer/product/0007/25/5400/19/0007255400191_2_A1C1_0600.png');
+            background-size: cover;
+            background-position: center;
+            width: 500px;
+            height: 500px;
+
+            border-radius: 10px;
+            text-align: center;
+            padding-top: 40px;
+        }
+
+
+        .info {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1, h5 {
+            display: inline;
+        }
+
+        .order {
+            text-align: center;
+        }
+
+        .orders {
+            margin-top: 100px;
+        }
+    </style>
+
+    <script>
+        function order() {
+            alert('주문이 완료되었습니다');
+        }
+
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <div class="img"></div>
+    <div class="info">
+        <h1>반려견 아이스크림</h1>
+        <h5>가격: 5,900원/개 [4개입]</h5>
+        <p>무설탕, 무색소 / WPI 단백질, 비타민 다량 함유 / 이보다 cool 할 수 없는 간식</p>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">주문자 이름</span>
+            </div>
+            <input type="text" class="form-control" id="order-name">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text">수량</label>
+            </div>
+            <select class="custom-select" id="order-count">
+                <option selected value=""> -- 수량을 선택하세요 --</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">주소</span>
+            </div>
+            <input type="text" class="form-control" id="order-address">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">전화번호</span>
+            </div>
+            <input type="text" class="form-control" id="order-phone">
+        </div>
+        <div class="order">
+            <button onclick="order()" type="button" class="btn btn-primary">주문하기</button>
+        </div>
+    </div>
+    <div class="orders">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">이름</th>
+                <th scope="col">수량</th>
+                <th scope="col">주소</th>
+                <th scope="col">전화번호</th>
+            </tr>
+            </thead>
+            <tbody id="orders-box">
+            <tr>
+                <td>Noob Paik</td>
+                <td>9999</td>
+                <td>1945 Koreatown Blvd ,Los Angeles, CA, 90005</td>
+                <td>213-555-1919</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
